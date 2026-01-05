@@ -1,8 +1,10 @@
-# GitLab Fail2Ban Filter
+# Fail2Ban Filters and Addons
 
-## Updated for GitLab 13
+## fail2ban
+Fail2ban is a handy little security solution that bans upon multiple failed access attempts. Available on the EPEL (Extra Packages for Enterprise Linux) repository.
+To install, follow these steps:
 
-### Instructions (CentOS 7)
+### Install instructions
 
 + Install EPEL-RELEASE repository and the fail2ban packages
 ```
@@ -14,5 +16,9 @@ yum install fail2ban fail2ban-systemd
 ```
 systemctl enable --now fail2ban
 ```
+
+### Changelog:
++ Added filters for GitLab (13)
+
 
 [Source](https://gist.github.com/pawilon/238c278d3c6c4669771eb81b03264acd)
